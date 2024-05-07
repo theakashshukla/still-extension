@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Info Extractor</title>
+  <style>
+    body {
+      width: 400px;
+      /* Adjust width as needed */
+    }
+
+    .table-container {
+      height: 300px;
+      /* Adjust height as needed */
+      overflow: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>URL</th>
+          <th>Emails</th>
+          <th>Phones</th>
+        </tr>
+      </thead>
+      <tbody id="info-list">
+      </tbody>
+    </table>
+  </div>
+  <ul id="info-list"></ul>
+  <button id="send-button">Send</button>
+  <button id="clear-button">Clear</button>
+  <script src="popup.js"></script>
+</body>
+
+</html>
